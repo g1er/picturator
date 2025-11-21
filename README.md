@@ -1,56 +1,32 @@
 # Picturator
 
-Flutter приложение для генерации изображений из текстовых описаний.
+App for generating images from text descriptions.
 
-## Структура проекта
+## Project structure:
 
-Проект следует принципам Clean Architecture и разделен на следующие слои:
+### Domain 
+- `entities/` - business entities
+- `repositories/` - repositories interfaces
 
-### Domain (Доменный слой)
-- `entities/` - бизнес-сущности
-- `repositories/` - интерфейсы репозиториев
+### Data 
+- `repositories/` - repositories implementation
 
-### Data (Слой данных)
-- `repositories/` - реализации репозиториев
+### Presentation 
+- `screens/` - app screens
+- `widgets/` - re-used widgets
+- `bloc/` - BLoC for state management
 
-### Presentation (Слой представления)
-- `screens/` - экраны приложения
-- `widgets/` - переиспользуемые виджеты
-- `bloc/` - BLoC для управления состоянием
-
-### Core (Общие компоненты)
-- `constants/` - константы приложения
-- `theme/` - тема приложения
+### Core 
+- `constants/` - app constants
+- `theme/` - app themes
 - `di/` - dependency injection
 
-## Установка
+## Setup
+- git clone git@github.com:g1er/picturator.git
 
-1. Установите зависимости:
-```bash
-flutter pub get
-```
-
-2. Добавьте изображения в папку `assets/images/`:
-   - `image_1.png`
-   - `image_2.png`
-   - `image_3.png`
-   - `image_4.png`
-   - `image_5.png`
-   - `image_6.png`
-   - `image_7.png`
-
-## Запуск
+## Launch
 
 ```bash
 flutter run
 ```
-
-## Особенности
-
-- Clean Architecture
-- State Management с flutter_bloc
-- Плавные анимации переходов
-- Обработка ошибок
-- Null safety
-- Современный дизайн
 
