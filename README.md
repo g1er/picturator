@@ -29,4 +29,5 @@ App for generating images from text descriptions.
 ```bash
 flutter run
 ```
-
+## Generate Picture Error reproducing
+- Error appears every 4th time the "Try Another" button is pressed (including initial screen generating)
