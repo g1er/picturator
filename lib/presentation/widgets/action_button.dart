@@ -24,7 +24,7 @@ class ActionButton extends StatelessWidget {
         decoration: BoxDecoration(
             color: onTap != null
                 ? buttonColor ?? AppTheme.primaryColor
-                : Colors.grey.withValues(alpha: 0.35),
+                : AppTheme.primaryColor.withValues(alpha: 0.35),
             borderRadius: BorderRadius.circular(40)
         ),
         child: Text(
